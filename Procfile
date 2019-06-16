@@ -1,1 +1,1 @@
-gunicorn --pythonpath maven-dependency-download-server app:app
+web: gunicorn --pythonpath maven-dependency-download-server app:app
