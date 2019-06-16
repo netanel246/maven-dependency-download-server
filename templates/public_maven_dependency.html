@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="content-section">
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Public Maven</legend>
+                <div class="form-group">
+                    {{ form.maven_xml_pom.label(class="form-control-label") }}
+                    {% if form.maven_xml_pom.errors %}
+                        {{ form.maven_xml_pom(class="xml-pom-textArea form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.maven_xml_pom.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.maven_xml_pom(class="xml-pom-textArea form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+            </fieldset>
+            <div class="form-group">
+                {{ form.submit_download_jars(class="btn btn-outline-info") }}
+            </div>
+        </form>
+    </div>
+{% endblock content %}
