@@ -5,14 +5,14 @@ import shutil
 import uuid
 
 
-def do_run(argv):
+def do_run(pom, output_directory):
     internals_path = initialize_internals()
     internals_m2 = os.path.join(internals_path, '.m2')
 
-    temp_path = initialize_users_dependenies_dir(internals_path, argv[0])
+    temp_path = initialize_users_dependenies_dir(internals_path, pom)
     temp_m2 = os.path.join(temp_path, '.m2')
 
-    run(internals_m2, temp_m2, argv[1])
+    run(internals_m2, temp_m2, output_directory)
 
 
 def run(maven_base_libs_path, dependencies_path, output_path):
@@ -60,7 +60,7 @@ def initialize_internals():
     return internals_path
 
 
-def initialize_users_dependenies_dir(internals_path, users_pom_path):
+def initialize_users_dependenies_dir(internals_path, users_pom):
     temp_dir = os.path.join(internals_path, str(uuid.uuid4()))
     os.makedirs(temp_dir)
 
@@ -68,9 +68,8 @@ def initialize_users_dependenies_dir(internals_path, users_pom_path):
 
     temp_settings_path = create_mvn_settings(temp_dir)
 
-    with open(users_pom_path, 'r') as users_pom:
-        with open(temp_pom_path, 'w') as temp_pom:
-            temp_pom.write(users_pom.read())
+    with open(temp_pom_path, 'w') as temp_pom:
+        temp_pom.write(users_pom)
 
     print('copying base depedencies')
     shutil.copytree(os.path.join(internals_path, '.m2'), os.path.join(temp_dir, '.m2'))
