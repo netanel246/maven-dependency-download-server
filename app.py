@@ -5,7 +5,7 @@ import uuid
 from utils.forms import MavenForm
 from utils.consts import ABOUT_PUBLIC_MAVEN_XML_EXAMPLE, DOWNLOADED_FILES_DIR, ZIP_EXTENSION
 import shutil
-
+import pathlib
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = "ffd4gf78th4ythh49j4s7498dwde4897ry89"
@@ -36,11 +36,10 @@ def public_maven_dependency():
 
 def download_jars(maven_jar_pom):
     jars_dir_name = str(uuid.uuid4())
-    jars_dir_path = path.join(DOWNLOADED_FILES_DIR, jars_dir_name)
-    jars_zip_path = path.join(DOWNLOADED_FILES_DIR, jars_dir_name)
+    jars_dir_path = str(pathlib.Path(DOWNLOADED_FILES_DIR).joinpath(jars_dir_name))
     process.do_run(maven_jar_pom, jars_dir_path)
-    shutil.make_archive(jars_zip_path, ZIP_EXTENSION, jars_dir_path)
-    return jars_zip_path + f".{ZIP_EXTENSION}"
+    shutil.make_archive(jars_dir_path, ZIP_EXTENSION, jars_dir_path)
+    return jars_dir_path + f".{ZIP_EXTENSION}"
 
 
 if __name__ == '__main__':
