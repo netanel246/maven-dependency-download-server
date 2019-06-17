@@ -31,7 +31,7 @@ def public_maven_dependency():
             jars_zip_path = download_jars(form.maven_xml_pom.data)
             return send_file(jars_zip_path, as_attachment=True, attachment_filename='jars.zip')
         except Exception as e:
-            flash('Failed to download the jars', 'danger')
+            flash('Failed to download the jars: {}'.format(e), 'danger')
     return render_template('public_maven_dependency.html', title='public maven', form=form)
 
 

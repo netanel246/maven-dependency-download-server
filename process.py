@@ -39,7 +39,7 @@ def run(maven_base_libs_path, dependencies_path, output_path):
         if dependency[0] == '/':
             dependency = dependency[1:]
         if dir[0] == '/':
-            dir = dependency[1:]
+            dir = dir[1:]
         input_file = str(pathlib.Path(dependencies_path).joinpath(dependency))
 
         output_tree_dir = str(pathlib.Path(output_tree).joinpath(dir))
