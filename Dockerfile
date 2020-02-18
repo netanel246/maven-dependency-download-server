@@ -5,7 +5,6 @@ USER root
 # Install python and pip
 RUN apk add --update --no-cache python3 && \
     if [ ! -e /usr/bin/python ]; then ln -sf python3 /usr/bin/python ; fi && \
-    \
     python3 -m ensurepip && \
     rm -r /usr/lib/python*/ensurepip && \
     pip3 install --no-cache --upgrade pip setuptools wheel && \
@@ -33,4 +32,4 @@ RUN adduser -D myuser
 RUN chmod -R 777 .
 USER myuser
 
-CMD gunicorn --bind 0.0.0.0:8080 --timeout 300 wsgi
+CMD gunicorn --bind 0.0.0.0:8080 --timeout 60000 wsgi
