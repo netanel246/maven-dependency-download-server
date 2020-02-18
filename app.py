@@ -1,4 +1,5 @@
 from flask import Flask, render_template, send_file, url_for, flash, redirect
+from flask_cors import CORS
 import process
 import uuid
 from utils.forms import MavenForm
@@ -8,6 +9,7 @@ import pathlib
 
 
 app = Flask(__name__)
+CORS(app)
 
 app.config['SECRET_KEY'] = "ffd4gf78th4ythh49j4s7498dwde4897ry89"
 
@@ -31,6 +33,7 @@ def public_maven_dependency():
             jars_zip_path = download_jars(form.maven_xml_pom.data)
             return send_file(jars_zip_path, as_attachment=True, attachment_filename='jars.zip')
         except Exception as e:
+            print(e)
             flash('Failed to download the jars: {}'.format(e), 'danger')
     return render_template('public_maven_dependency.html', title='public maven', form=form)
 
@@ -45,3 +48,4 @@ def download_jars(maven_jar_pom):
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
+    # app.run()

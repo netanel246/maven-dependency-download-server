@@ -35,10 +35,10 @@ def run(maven_base_libs_path, dependencies_path, output_path):
     for dependency in dependencies:
         dir, filename = os.path.split(dependency)
 
-        # Remove first / of linux path
-        if dependency[0] == '/':
+        # Remove first / of linux path and first \ of windows path
+        if dependency[0] == '/' or dependency[0] == '\\':
             dependency = dependency[1:]
-        if dir[0] == '/':
+        if dir[0] == '/' or dir[0] == '\\':
             dir = dir[1:]
         input_file = str(pathlib.Path(dependencies_path).joinpath(dependency))
 

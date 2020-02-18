@@ -1,152 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07ef675f-796f-4d9f-861f-27ba311cc474" name="Default Changelist" comment="">
+    <list default="true" id="d18061af-9a5c-4d12-b67b-2669ff94abf7" name="Default Changelist" comment="Fix Dockerfile:&#10;   Add permissions to all files (fix permissions problem created by building from windows)&#10;   Add timeout to gunicorn run (he default is 30s - not enogh)">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/maven-dependency-download-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/maven-dependency-download-server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process.py" beforeDir="false" afterPath="$PROJECT_DIR$/process.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="35" column="19" lean-forward="true" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#77#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wsgi.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="26" selection-start-column="26" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Dockerfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Procfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="67" selection-start-column="5" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/process.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-808">
-              <caret line="38" column="21" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/settings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Flask Main" />
         <option value="Python Script" />
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>pathlib</find>
-      <find>join</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="devekop_docker" />
       </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/settings.xml" />
-        <option value="$PROJECT_DIR$/process.py" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/app.py" />
-        <option value="$PROJECT_DIR$/wsgi.py" />
-        <option value="$PROJECT_DIR$/Dockerfile" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="y" value="27" />
-    <option name="width" value="927" />
-    <option name="height" value="1053" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="maven-dependency-download-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maven-dependency-download-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maven-dependency-download-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maven-dependency-download-server" type="462c0819:PsiDirectoryNode" />
-              <item name="internal" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectId" id="1Xl2iwT0Q5Y7uh59o7A8lEBFQbO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -157,24 +48,17 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/bl" />
+      <recent name="$PROJECT_DIR$/static" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
-    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.app">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="maven-dependency-download-server" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -186,7 +70,6 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -196,6 +79,24 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="maven-dependency-download-server" type="Python.FlaskServer">
+      <module name="maven-dependency-download-server" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.app" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.app" />
@@ -207,53 +108,99 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="07ef675f-796f-4d9f-861f-27ba311cc474" name="Default Changelist" comment="" />
-      <created>1560761538176</created>
+      <changelist id="d18061af-9a5c-4d12-b67b-2669ff94abf7" name="Default Changelist" comment="" />
+      <created>1560432521762</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1560761538176</updated>
-      <workItem from="1560761541839" duration="7999000" />
-      <workItem from="1560769730288" duration="5232000" />
+      <updated>1560432521762</updated>
+      <workItem from="1560432526603" duration="353000" />
+      <workItem from="1560432904410" duration="3158000" />
+      <workItem from="1560663902275" duration="4186000" />
     </task>
-    <task id="LOCAL-00001" summary="Set the process to work on windows and linux">
-      <created>1560766943411</created>
+    <task id="LOCAL-00001" summary="init commit">
+      <created>1560434294522</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1560766943411</updated>
+      <updated>1560434294522</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add requirements.txt">
+      <created>1560435464131</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1560435464131</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add heroku files">
+      <created>1560683450015</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1560683450015</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add bash script to install maven">
+      <created>1560685122448</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1560685122448</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fixed Procfile">
+      <created>1560685495379</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1560685495379</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added some packages for maven">
+      <created>1560685637178</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1560685637178</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added web to Procfile">
+      <created>1560685927791</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1560685927791</updated>
+    </task>
+    <task id="LOCAL‎00008" summary="Add software-properties-common to aptfile">
+      <created>1560701339871</created>
+      <option name="number" value="LOCAL‎00008" />
+      <option name="presentableId" value="LOCAL‎00008" />
+      <updated>1560701339871</updated>
+    </task>
+    <task id="LOCAL‎00009" summary="add pom.xml">
+      <created>1560702663571</created>
+      <option name="number" value="LOCAL‎00009" />
+      <option name="presentableId" value="LOCAL‎00009" />
+      <updated>1560702663571</updated>
+    </task>
+    <task id="LOCAL‎00010" summary="add pom.xml">
+      <created>1560703671765</created>
+      <option name="number" value="LOCAL‎00010" />
+      <option name="presentableId" value="LOCAL‎00010" />
+      <updated>1560703671765</updated>
+    </task>
+    <task id="LOCAL‎00011" summary="add pom.xml">
+      <created>1560704264115</created>
+      <option name="number" value="LOCAL‎00011" />
+      <option name="presentableId" value="LOCAL‎00011" />
+      <updated>1560704264115</updated>
+    </task>
+    <task id="LOCAL‎00012" summary="add pom.xml">
+      <created>1560704686006</created>
+      <option name="number" value="LOCAL‎00012" />
+      <option name="presentableId" value="LOCAL‎00012" />
+      <updated>1560704686006</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13231000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25235197" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39955604" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32963374" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.7280799" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" x="0" y="0" width="413" height="855" id="Documentation" order="4" side_tool="true" weight="0.32982844" />
-      <window_info anchor="right" id="Database" order="5" />
-    </layout>
+    <option name="totallyTimeSpent" value="7697000" />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -264,20 +211,7 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
+              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
@@ -299,152 +233,116 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Set the process to work on windows and linux" />
-    <option name="LAST_COMMIT_MESSAGE" value="Set the process to work on windows and linux" />
+    <MESSAGE value="init commit" />
+    <MESSAGE value="add requirements.txt" />
+    <MESSAGE value="Add heroku files" />
+    <MESSAGE value="Add bash script to install maven" />
+    <MESSAGE value="Fixed Procfile" />
+    <MESSAGE value="Added some packages for maven" />
+    <MESSAGE value="Added web to Procfile" />
+    <MESSAGE value="Add software-properties-common to aptfile" />
+    <MESSAGE value="add pom.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="add pom.xml" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581885559964">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1581885559964" />
+    <state x="979" y="64" key="#xdebugger.evaluate" timestamp="1581963530381">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="979" y="64" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1581963530381" />
+    <state x="274" y="69" width="1006" height="607" key="CommitChangelistDialog2" timestamp="1582004959518">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="274" y="69" width="1006" height="607" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582004959518" />
+    <state width="1475" height="454" key="DebuggerActiveHint" timestamp="1581962975090">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1475" height="454" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1581962975090" />
+    <state x="156" y="26" key="DiffContextDialog" timestamp="1582004907207">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="156" y="26" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1582004907207" />
+    <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1581885306817">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1581885306817" />
+    <state width="1515" height="200" key="GridCell.Tab.0.bottom" timestamp="1582002462853">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="200" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582002462853" />
+    <state width="1515" height="200" key="GridCell.Tab.0.center" timestamp="1582002462853">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="200" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582002462853" />
+    <state width="1515" height="200" key="GridCell.Tab.0.left" timestamp="1582002462852">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="200" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582002462852" />
+    <state width="1515" height="200" key="GridCell.Tab.0.right" timestamp="1582002462853">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="200" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582002462853" />
+    <state width="1515" height="254" key="GridCell.Tab.1.bottom" timestamp="1581964046453">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="254" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581964046453" />
+    <state width="1515" height="254" key="GridCell.Tab.1.center" timestamp="1581964046452">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="254" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1581964046452" />
+    <state width="1515" height="254" key="GridCell.Tab.1.left" timestamp="1581964046452">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="254" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1581964046452" />
+    <state width="1515" height="254" key="GridCell.Tab.1.right" timestamp="1581964046452">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="254" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1581964046452" />
+    <state x="277" y="55" key="SettingsEditor" timestamp="1581885493919">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1581885493919" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1582001831773">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582001831773" />
+    <state x="463" y="10" width="609" height="804" key="find.popup" timestamp="1581878662710">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="463" y="10" width="609" height="804" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1581878662710" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/app.py</url>
-          <line>34</line>
+          <line>29</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app.py</url>
+          <line>43</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/maven_dependency_download_server$app.coverage" NAME="app Coverage Results" MODIFIED="1560766796629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="evaluateCodeFragment">
-      <expression>
-        <expression-string>jars_dir_path = pathlib.Path(DOWNLOADED_FILES_DIR).joinpath(jars_dir_name)
-print(jars_dir_path)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>jars_dir_path = pathlib.Path(DOWNLOADED_FILES_DIR).joinpath(jars_dir_name)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>jars_dir_path = pathlib.Path.joinpath(DOWNLOADED_FILES_DIR, jars_dir_name)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-    </expressions>
-    <expressions id="evaluateExpression">
-      <expression>
-        <expression-string>str(pathlib.Path(dependencies_path).joinpath(dependency[1:]))</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>str(pathlib.Path(dependencies_path).joinpath(dependency.s))</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>str(pathlib.Path(dependencies_path).joinpath(dependency))</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>str(pathlib.Path(dependencies_path).joinpath(pathlib.Path(dependency)))</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>str(pathlib.Path(root.replace(maven_base_libs_path, '')).joinpath(filename))</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>str(pathlib.Path(root.replace(dependencies_path, '')).joinpath(filename))</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>str(pathlib.Path(root.replace(maven_base_libs_path + '/', '')).joinpath(filename))</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>str(pathlib.Path(root.replace(maven_base_libs_path + '\\', '')).joinpath(filename))</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>str(pathlib.Path(root.replace(dependencies_path + '/', '')).joinpath(filename))</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file:///usr/lib/python3.6/shutil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="278" column="4" selection-start-line="278" selection-start-column="4" selection-end-line="278" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="67" selection-start-column="5" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-808">
-          <caret line="38" column="21" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="35" column="19" lean-forward="true" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
