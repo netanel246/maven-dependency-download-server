@@ -4,16 +4,20 @@ import subprocess
 import shutil
 import uuid
 import pathlib
+import tempfile
+from distutils.dir_util import copy_tree
 
 
 def do_run(pom, output_directory):
-    internals_path = initialize_internals()
+    working_dir = tempfile.TemporaryDirectory()
+    internals_path = initialize_internals(working_dir.name)
     internals_m2 = str(pathlib.Path(internals_path).joinpath('.m2'))
 
     temp_path = initialize_users_dependenies_dir(internals_path, pom)
     temp_m2 = str(pathlib.Path(temp_path).joinpath('.m2'))
 
     run(internals_m2, temp_m2, output_directory)
+    working_dir.cleanup()
 
 
 def run(maven_base_libs_path, dependencies_path, output_path):
@@ -52,9 +56,12 @@ def run(maven_base_libs_path, dependencies_path, output_path):
     print('Copied {} files to dependencies directory'.format(len(dependencies)))
 
 
-def initialize_internals():
+def initialize_internals(working_dir):
     dirname = os.path.dirname(os.path.realpath(__file__))
-    internals_path = str(pathlib.Path(dirname).joinpath('internal'))
+    original_internals_path = str(pathlib.Path(dirname).joinpath('internal'))
+
+    copy_tree(original_internals_path, working_dir)
+    internals_path = working_dir
 
     settings_path = create_mvn_settings(internals_path)
 
@@ -78,6 +85,7 @@ def initialize_users_dependenies_dir(internals_path, users_pom):
         temp_pom.write(users_pom)
 
     print('copying base depedencies')
+    # TODO - Check if can cancel to copy and just use "internals_path" instead of "temp_dir"
     shutil.copytree(str(pathlib.Path(internals_path).joinpath('.m2')), str(pathlib.Path(temp_dir).joinpath('.m2')))
 
     print('downloading new dependencies')
